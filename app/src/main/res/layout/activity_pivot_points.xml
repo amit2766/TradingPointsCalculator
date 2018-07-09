@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="com.betatester.amit.tradingpointcalculator.PivotPoints">
+
+
+    <Button
+        android:id="@+id/bt_classical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pivot_classical"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_camarilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pivot_camarilla"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_fibonacci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pivot_fibonacci"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_woodie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pivot_woodie"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/rl_classical_pivot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_classical_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/classical_pivot_points" />
+
+        <EditText
+            android:id="@+id/et_previous_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/close" />
+
+        <EditText
+            android:id="@+id/et_previous_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/high"
+            />
+
+        <EditText
+            android:id="@+id/et_previous_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="@string/low" />
+
+        <Button
+            android:id="@+id/bt_calculate_classical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_classical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/classical_pivot_points"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="S1: "/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

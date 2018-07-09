@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TradingPointCalculator</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="calculation_points">Calculation Points</string>
+    <string name="pivot_classical">Classical</string>
+    <string name="pivot_camarilla">Camarilla</string>
+    <string name="pivot_fibonacci">Fibonacci</string>
+    <string name="pivot_woodie">Woodie\'s</string>
+    <string name="calculate">Calculate</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="close">Close</string>
+    <string name="classical_pivot_points">Classical Pivot Points</string>
+    <string name="classical_pivot_points">Classical Pivot Points</string>
+</resources>

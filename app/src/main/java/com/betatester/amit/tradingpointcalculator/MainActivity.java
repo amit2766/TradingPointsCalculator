@@ -82,9 +82,14 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_pivot_point) {
-            Intent intent = new Intent(this,PivotPoints.class);
+            Intent intent = new Intent(this, PivotPoints.class);
+            startActivity(intent);
         } else if (id == R.id.nav_gann_square_of_nine) {
-
+            Intent intent = new Intent(this, GannSquareOfNine.class);
+            startActivity(intent);
+        } else if ((id==R.id.nav_vwap_based_sr)){
+            Intent intent = new Intent(this, VWAPBased.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

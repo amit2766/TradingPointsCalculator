@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="10dp"
+    android:orientation="vertical"
     tools:context="com.betatester.amit.tradingpointcalculator.PivotPoints">
 
 
@@ -42,75 +42,715 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-        <TextView
-            android:id="@+id/tv_classical_heading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/classical_pivot_points" />
-
         <EditText
             android:id="@+id/et_previous_close"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal"
-            android:hint="@string/close" />
+            android:hint="@string/close"
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/et_previous_high"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal"
             android:hint="@string/high"
-            />
+            android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/et_previous_low"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal"
-            android:hint="@string/low" />
-
-        <Button
-            android:id="@+id/bt_calculate_classical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/calculate" />
+            android:hint="@string/low"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <LinearLayout
+        <RelativeLayout
+            android:id="@+id/rl_classical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/ll_classical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/classical_pivot_points"/>
+            android:layout_height="wrap_content">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/tv_classical_pivot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginBottom="5dp"
+                android:text="Classical Pivot" />
+
+            <RelativeLayout
+                android:id="@+id/ll_classical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_pivot">
+
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/tv_classical_pp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="S1: "/>
+                    android:layout_margin="3dp"
+                    android:text="PP: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_s1"
+                    android:text="@string/default_price" />
 
 
-            </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_classical_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_classical_pp"
+                    android:layout_margin="3dp"
+                    android:text="S1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_classical_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_s1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_classical_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_s1"
+                    android:layout_margin="3dp"
+                    android:text="S2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_s1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_s2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_classical_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_s2"
+                    android:layout_margin="3dp"
+                    android:text="S3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_s2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_s3"
+                    android:text="@string/default_price" />
 
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_classical_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_s3"
+                    android:layout_margin="3dp"
+                    android:text="S4: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_s3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_s4"
+                    android:text="@string/default_price" />
 
 
+                <TextView
+                    android:id="@+id/tv_classical_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_classical_s1"
+                    android:text="R1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_r1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_classical_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_classical_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_classical_s2"
+                    android:text="R2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_r2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_classical_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_classical_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_classical_s3"
+                    android:text="R3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_r3"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_classical_r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_classical_r3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_classical_s4"
+                    android:text="R4: " />
+
+                <TextView
+                    android:id="@+id/tv_value_classical_r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_classical_r3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_classical_r4"
+                    android:text="@string/default_price" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fibonacci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_fibonacci_pivot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Fibonacci Pivot" />
+
+            <RelativeLayout
+                android:id="@+id/ll_fibonacci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_fibonacci_pivot">
+
+                <TextView
+                    android:id="@+id/tv_fibonacci_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="PP: " />
+
+                <TextView
+                    android:id="@+id/tv_value_fibonacci_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_fibonacci_s1"
+                    android:text="@string/default_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_fibonacci_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fibonacci_pp"
+                    android:layout_margin="3dp"
+                    android:text="S1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_fibonacci_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fibonacci_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_fibonacci_s1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_fibonacci_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_s1"
+                    android:layout_margin="3dp"
+                    android:text="S2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_fibonacci_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_s1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_fibonacci_s2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_fibonacci_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_s2"
+                    android:layout_margin="3dp"
+                    android:text="S3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_fibonacci_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_s2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_fibonacci_s3"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_fibonacci_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_fibonacci_s1"
+                    android:text="R1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_fibonacci_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_fibonacci_r1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_fibonacci_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fibonacci_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_fibonacci_s2"
+                    android:text="R2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_fibonacci_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_fibonacci_r2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_fibonacci_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fibonacci_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_fibonacci_s3"
+                    android:text="R3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_fibonacci_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_fibonacci_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_fibonacci_r3"
+                    android:text="@string/default_price" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_camarilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_camarilla_pivot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Camarilla Pivot" />
+
+            <RelativeLayout
+                android:id="@+id/ll_camarilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_camarilla_pivot">
+
+                <TextView
+                    android:id="@+id/tv_camarilla_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="PP: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_s1"
+                    android:text="@string/default_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_camarilla_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_camarilla_pp"
+                    android:layout_margin="3dp"
+                    android:text="S1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_camarilla_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_s1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_camarilla_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_s1"
+                    android:layout_margin="3dp"
+                    android:text="S2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_s1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_s2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_camarilla_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_s2"
+                    android:layout_margin="3dp"
+                    android:text="S3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_s2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_s3"
+                    android:text="@string/default_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_camarilla_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_s3"
+                    android:layout_margin="3dp"
+                    android:text="S4: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_s3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_s4"
+                    android:text="@string/default_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_camarilla_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_camarilla_s1"
+                    android:text="R1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_r1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_camarilla_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_camarilla_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_camarilla_s2"
+                    android:text="R2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_r2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_camarilla_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_camarilla_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_camarilla_s3"
+                    android:text="R3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_r3"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_camarilla_r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_camarilla_r3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_camarilla_s4"
+                    android:text="R4: " />
+
+                <TextView
+                    android:id="@+id/tv_value_camarilla_r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_camarilla_r3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_camarilla_r4"
+                    android:text="@string/default_price" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_woodie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_woodie_pivot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Woodie's Pivot" />
+
+            <RelativeLayout
+                android:id="@+id/ll_woodie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_woodie_pivot">
+
+                <TextView
+                    android:id="@+id/tv_woodie_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="PP: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_pp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_s1"
+                    android:text="@string/default_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_woodie_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_woodie_pp"
+                    android:layout_margin="3dp"
+                    android:text="S1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_s1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_woodie_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_s1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_woodie_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_s1"
+                    android:layout_margin="3dp"
+                    android:text="S2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_s2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_s1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_s2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_woodie_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_s2"
+                    android:layout_margin="3dp"
+                    android:text="S3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_s3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_s2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_s3"
+                    android:text="@string/default_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_woodie_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_s3"
+                    android:layout_margin="3dp"
+                    android:text="S4: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_s4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_s3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_s4"
+                    android:text="@string/default_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_woodie_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_woodie_s1"
+                    android:text="R1: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_pp"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_r1"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_woodie_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_woodie_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_woodie_s2"
+                    android:text="R2: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_r1"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_r2"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_woodie_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_woodie_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_woodie_s3"
+                    android:text="R3: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_r3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_r2"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_r3"
+                    android:text="@string/default_price" />
+
+                <TextView
+                    android:id="@+id/tv_woodie_r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_woodie_r3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_value_woodie_s4"
+                    android:text="R4: " />
+
+                <TextView
+                    android:id="@+id/tv_value_woodie_r4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_woodie_r3"
+                    android:layout_margin="3dp"
+                    android:layout_toRightOf="@+id/tv_woodie_r4"
+                    android:text="@string/default_price" />
+            </RelativeLayout>
+        </RelativeLayout>
     </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

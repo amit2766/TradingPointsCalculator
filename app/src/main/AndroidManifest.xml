@@ -19,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PivotPoints"></activity>
+        <activity android:name=".PivotPoints" />
+        <activity android:name=".GannSquareOfNine" />
+        <activity android:name=".VWAPBased"></activity>
     </application>
 
 </manifest>

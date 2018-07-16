@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.betatester.amit.tradingpointcalculator.GannSquareOfNine">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_cmp"
+        android:hint="Current Market Price"
+        android:ems="10"
+        android:inputType="numberDecimal"
+         />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_cmp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/tl_gannChart"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tr_row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_1_1"
+
+                android:text="value1" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_1_4"
+                android:text="value4"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_1_7"
+                android:text="value7" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_2_2"
+
+                android:text="value2" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+
+                android:id="@+id/tv_value_2_4"
+                android:text="value4"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_2_6"
+                android:text="value6" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_3_3"
+
+                android:text="value3" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+
+                android:id="@+id/tv_value_3_4"
+                android:text="value4"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_3_5"
+                android:text="value5" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_4_1"
+
+                android:text="value1" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_4_2"
+
+                android:text="value2" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_4_3"
+                android:text="value3" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorMainFocus"
+                android:id="@+id/tv_value_4_4"
+
+                android:text="SV" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_4_5"
+                android:text="value5" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_4_6"
+                android:text="value6" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_4_7"
+                android:text="value7" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_row5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_5_3"
+                android:text="value3" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+
+                android:id="@+id/tv_value_5_4"
+                android:text="value4"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_5_5"
+
+                android:text="value5" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_row6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_6_2"
+                android:text="value2" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+
+                android:id="@+id/tv_value_6_4"
+                android:text="value4"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_6_6"
+
+                android:text="value6" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_row7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border">
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_7_1"
+
+                android:text="value1" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+           />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:id="@+id/tv_value_7_4"
+                android:text="value4"/>
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                 />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:id="@+id/tv_value_7_7"
+
+                android:text="value7" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_classical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tl_gannChart"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:id="@+id/tv_gann_sr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Gann Support and Resistance" />
+
+        <RelativeLayout
+            android:id="@+id/ll_classical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gann_sr">
+
+            <TextView
+                android:id="@+id/tv_value_classical_pp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_s1"
+                android:text="@string/default_price" />
+
+
+            <TextView
+                android:id="@+id/tv_classical_s1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_classical_pp"
+                android:layout_margin="3dp"
+                android:text="S1: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_s1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_classical_pp"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_s1"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_classical_s2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_s1"
+                android:layout_margin="3dp"
+                android:text="S2: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_s2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_s1"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_s2"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_classical_s3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_s2"
+                android:layout_margin="3dp"
+                android:text="S3: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_s3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_s2"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_s3"
+                android:text="@string/default_price" />
+
+
+            <TextView
+                android:id="@+id/tv_classical_s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_s3"
+                android:layout_margin="3dp"
+                android:text="S4: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_s3"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_s4"
+                android:text="@string/default_price" />
+
+
+            <TextView
+                android:id="@+id/tv_classical_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_pp"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_value_classical_s1"
+                android:text="R1: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_pp"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_r1"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_classical_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_classical_r1"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_value_classical_s2"
+                android:text="R2: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_r1"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_r2"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_classical_r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_classical_r2"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_value_classical_s3"
+                android:text="R3: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_r3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_r2"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_r3"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_classical_r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_classical_r3"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_value_classical_s4"
+                android:text="R4: " />
+
+            <TextView
+                android:id="@+id/tv_value_classical_r4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_classical_r3"
+                android:layout_margin="3dp"
+                android:layout_toRightOf="@+id/tv_classical_r4"
+                android:text="@string/default_price" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

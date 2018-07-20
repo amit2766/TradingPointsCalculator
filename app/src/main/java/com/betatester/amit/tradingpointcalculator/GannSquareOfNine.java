@@ -7,6 +7,11 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import static java.lang.Math.ceil;
+import static java.lang.Math.floor;
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
+
 public class GannSquareOfNine extends AppCompatActivity {
 
     TextView tvValue11;
@@ -81,6 +86,33 @@ public class GannSquareOfNine extends AppCompatActivity {
 
         double cmp = Double.valueOf(etCMP.getText().toString());
 
+        double e4 = sqrt(cmp);
+        double c4 = floor(e4);
+
+        double b4 = (c4 - 1);
+
+        double midValue = pow(b4,2);
+
+        double v43 = pow((b4+.125),2);
+        double v42 = pow(c4,2);
+
+        double f4;
+        if(c4==e4){
+            f4= c4+1;
+        } else {
+            f4= ceil(c4);
+        }
+        double g4 = f4+1;
+
+        double v41 = pow((f4+.125),2);
+//        double v51 =
+
+//        tvValue44.setText(roundOff(midValue));
+
+    }
+
+    private String roundOff(double number) {
+        return String.format("%.2f",number);
 
     }
 

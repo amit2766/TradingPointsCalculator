@@ -18,7 +18,7 @@
         <item
             android:id="@+id/nav_vwap_based_sr"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gann Square of Nine" />
+            android:title="VWAP based SR" />
 
     </group>
 </menu>

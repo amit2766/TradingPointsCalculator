@@ -6,20 +6,19 @@
     tools:context="com.betatester.amit.tradingpointcalculator.GannSquareOfNine">
 
     <EditText
+        android:id="@+id/et_cmp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/et_cmp"
-        android:hint="Current Market Price"
         android:ems="10"
-        android:inputType="numberDecimal"
-         />
+        android:hint="Current Market Price"
+        android:inputType="numberDecimal" />
 
     <TableLayout
+        android:id="@+id/tl_gannChart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_cmp"
         android:layout_marginTop="5dp"
-        android:id="@+id/tl_gannChart"
         android:stretchColumns="*">
 
         <TableRow
@@ -29,57 +28,57 @@
             android:background="@drawable/border">
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
                 android:id="@+id/tv_value_1_1"
-
-                android:text="value1" />
-
-            <TextView
                 android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-
-                />
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-
-                 />
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
-                android:id="@+id/tv_value_1_4"
-                android:text="value4"/>
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-
-                 />
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-
-                />
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
                 android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+
+                android:text="@string/default_price" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_value_1_4"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
                 android:id="@+id/tv_value_1_7"
-                android:text="value7" />
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
         </TableRow>
 
@@ -94,47 +93,47 @@
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
                 android:id="@+id/tv_value_2_2"
-
-                android:text="value2" />
-
-            <TextView
                 android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-
-                 />
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
-
-                android:id="@+id/tv_value_2_4"
-                android:text="value4"/>
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-
-                 />
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
                 android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+
+                android:text="@string/default_price" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_value_2_4"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+
+                android:padding="3dip"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="3dip"
+
+                />
+
+            <TextView
                 android:id="@+id/tv_value_2_6"
-                android:text="value6" />
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
@@ -156,47 +155,47 @@
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
             <TextView
                 android:background="@drawable/border"
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
                 android:id="@+id/tv_value_3_3"
-
-                android:text="value3" />
-
-            <TextView
                 android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
-
-                android:id="@+id/tv_value_3_4"
-                android:text="value4"/>
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
                 android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_value_3_4"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+
+                android:padding="3dip"
+                android:text="@string/default_price" />
+
+            <TextView
                 android:id="@+id/tv_value_3_5"
-                android:text="value5" />
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
             <TextView
                 android:background="@drawable/border"
@@ -214,63 +213,63 @@
             android:background="@drawable/border">
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
                 android:id="@+id/tv_value_4_1"
-
-                android:text="value1" />
-
-            <TextView
                 android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
                 android:gravity="center"
                 android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
+
+                android:text="@string/default_price" />
+
+            <TextView
                 android:id="@+id/tv_value_4_2"
-
-                android:text="value2" />
-
-            <TextView
                 android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
                 android:backgroundTint="@color/colorNeutralPoint"
-                android:id="@+id/tv_value_4_3"
-                android:text="value3" />
-
-            <TextView
-                android:background="@drawable/border"
                 android:gravity="center"
                 android:padding="3dip"
-                android:backgroundTint="@color/colorMainFocus"
+
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_value_4_3"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
+
+            <TextView
                 android:id="@+id/tv_value_4_4"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorMainFocus"
+                android:gravity="center"
+                android:padding="3dip"
 
                 android:text="SV" />
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
                 android:id="@+id/tv_value_4_5"
-                android:text="value5" />
-
-            <TextView
                 android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
                 android:gravity="center"
                 android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
+                android:text="@string/default_price" />
+
+            <TextView
                 android:id="@+id/tv_value_4_6"
-                android:text="value6" />
-
-            <TextView
                 android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
                 android:gravity="center"
                 android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
+                android:text="@string/default_price" />
+
+            <TextView
                 android:id="@+id/tv_value_4_7"
-                android:text="value7" />
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
         </TableRow>
 
@@ -295,30 +294,30 @@
                 />
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
                 android:id="@+id/tv_value_5_3"
-                android:text="value3" />
-
-            <TextView
                 android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
-
-                android:id="@+id/tv_value_5_4"
-                android:text="value4"/>
-
-            <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
                 android:backgroundTint="@color/colorSupportFocusLite"
-                android:id="@+id/tv_value_5_5"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
-                android:text="value5" />
+            <TextView
+                android:id="@+id/tv_value_5_4"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+
+                android:padding="3dip"
+                android:text="@string/default_price" />
+
+            <TextView
+                android:id="@+id/tv_value_5_5"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
@@ -332,7 +331,7 @@
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
         </TableRow>
 
@@ -350,27 +349,26 @@
                 />
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
                 android:id="@+id/tv_value_6_2"
-                android:text="value2" />
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:padding="3dip"
-/>
+                android:padding="3dip" />
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
-
                 android:id="@+id/tv_value_6_4"
-                android:text="value4"/>
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
@@ -380,20 +378,20 @@
                 />
 
             <TextView
+                android:id="@+id/tv_value_6_6"
                 android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
                 android:gravity="center"
                 android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
-                android:id="@+id/tv_value_6_6"
 
-                android:text="value6" />
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
         </TableRow>
 
@@ -404,34 +402,33 @@
             android:background="@drawable/border">
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
                 android:id="@+id/tv_value_7_1"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
+                android:gravity="center"
+                android:padding="3dip"
 
-                android:text="value1" />
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
             <TextView
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:padding="3dip"
-           />
+                android:padding="3dip" />
 
             <TextView
-                android:background="@drawable/border"
-                android:gravity="center"
-                android:padding="3dip"
-                android:backgroundTint="@color/colorNeutralPoint"
                 android:id="@+id/tv_value_7_4"
-                android:text="value4"/>
+                android:background="@drawable/border"
+                android:backgroundTint="@color/colorNeutralPoint"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="@string/default_price" />
 
             <TextView
                 android:background="@drawable/border"
@@ -445,16 +442,16 @@
                 android:gravity="center"
                 android:padding="3dip"
 
-                 />
+                />
 
             <TextView
+                android:id="@+id/tv_value_7_7"
                 android:background="@drawable/border"
+                android:backgroundTint="@color/colorSupportFocusLite"
                 android:gravity="center"
                 android:padding="3dip"
-                android:backgroundTint="@color/colorSupportFocusLite"
-                android:id="@+id/tv_value_7_7"
 
-                android:text="value7" />
+                android:text="@string/default_price" />
 
         </TableRow>
 
@@ -462,7 +459,7 @@
     </TableLayout>
 
     <RelativeLayout
-        android:id="@+id/rl_classical"
+        android:id="@+id/rl_gann_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tl_gannChart"
@@ -476,161 +473,184 @@
             android:layout_marginBottom="5dp"
             android:text="Gann Support and Resistance" />
 
-        <RelativeLayout
-            android:id="@+id/ll_classical"
+        <TextView
+            android:id="@+id/tv_gann__sell_below"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_gann_sr">
+            android:layout_below="@+id/tv_gann_sr"
+            android:layout_margin="3dp"
+            android:text="Sell Below: " />
+
+        <TextView
+            android:id="@+id/tv_value_gann__sell_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gann_sr"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_gann__sell_below"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_gann__buy_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gann_sr"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_gann__sell_below"
+            android:text="Buy Above : " />
+
+        <TextView
+            android:id="@+id/tv_value_gann__buy_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gann_sr"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_gann__buy_above"
+            android:text="@string/default_price" />
+
+
+        <RelativeLayout
+            android:id="@+id/ll_gann_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_value_gann__sell_below">
 
             <TextView
-                android:id="@+id/tv_value_classical_pp"
+                android:id="@+id/tv_gann__s1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_s1"
-                android:text="@string/default_price" />
-
-
-            <TextView
-                android:id="@+id/tv_classical_s1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_classical_pp"
                 android:layout_margin="3dp"
                 android:text="S1: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_s1"
+                android:id="@+id/tv_value_gann__s1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_classical_pp"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_s1"
+                android:layout_toRightOf="@+id/tv_gann__s1"
                 android:text="@string/default_price" />
 
             <TextView
-                android:id="@+id/tv_classical_s2"
+                android:id="@+id/tv_gann__s2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_s1"
+                android:layout_below="@id/tv_gann__s1"
                 android:layout_margin="3dp"
                 android:text="S2: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_s2"
+                android:id="@+id/tv_value_gann__s2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_s1"
+                android:layout_below="@id/tv_gann__s1"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_s2"
+                android:layout_toRightOf="@+id/tv_gann__s2"
                 android:text="@string/default_price" />
 
             <TextView
-                android:id="@+id/tv_classical_s3"
+                android:id="@+id/tv_gann__s3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_s2"
+                android:layout_below="@id/tv_gann__s2"
                 android:layout_margin="3dp"
                 android:text="S3: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_s3"
+                android:id="@+id/tv_value_gann__s3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_s2"
+                android:layout_below="@id/tv_gann__s2"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_s3"
+                android:layout_toRightOf="@+id/tv_gann__s3"
                 android:text="@string/default_price" />
 
 
             <TextView
-                android:id="@+id/tv_classical_s4"
+                android:id="@+id/tv_gann__s4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_s3"
+                android:layout_below="@id/tv_gann__s3"
                 android:layout_margin="3dp"
                 android:text="S4: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_s4"
+                android:id="@+id/tv_value_gann__s4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_s3"
+                android:layout_below="@id/tv_gann__s3"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_s4"
+                android:layout_toRightOf="@+id/tv_gann__s4"
                 android:text="@string/default_price" />
 
 
             <TextView
-                android:id="@+id/tv_classical_r1"
+                android:id="@+id/tv_gann__r1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_pp"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_value_classical_s1"
+                android:layout_toEndOf="@+id/tv_value_gann__s1"
                 android:text="R1: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_r1"
+                android:id="@+id/tv_value_gann__r1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_pp"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_r1"
+                android:layout_toRightOf="@+id/tv_gann__r1"
                 android:text="@string/default_price" />
 
             <TextView
-                android:id="@+id/tv_classical_r2"
+                android:id="@+id/tv_gann__r2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_classical_r1"
+                android:layout_below="@+id/tv_gann__r1"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_value_classical_s2"
+                android:layout_toRightOf="@+id/tv_value_gann__s2"
                 android:text="R2: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_r2"
+                android:id="@+id/tv_value_gann__r2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_r1"
+                android:layout_below="@id/tv_gann__r1"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_r2"
+                android:layout_toRightOf="@+id/tv_gann__r2"
                 android:text="@string/default_price" />
 
             <TextView
-                android:id="@+id/tv_classical_r3"
+                android:id="@+id/tv_gann__r3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_classical_r2"
+                android:layout_below="@+id/tv_gann__r2"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_value_classical_s3"
+                android:layout_toRightOf="@+id/tv_value_gann__s3"
                 android:text="R3: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_r3"
+                android:id="@+id/tv_value_gann__r3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_r2"
+                android:layout_below="@id/tv_gann__r2"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_r3"
+                android:layout_toRightOf="@+id/tv_gann__r3"
                 android:text="@string/default_price" />
 
             <TextView
-                android:id="@+id/tv_classical_r4"
+                android:id="@+id/tv_gann__r4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_classical_r3"
+                android:layout_below="@+id/tv_gann__r3"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_value_classical_s4"
+                android:layout_toRightOf="@+id/tv_value_gann__s4"
                 android:text="R4: " />
 
             <TextView
-                android:id="@+id/tv_value_classical_r4"
+                android:id="@+id/tv_value_gann__r4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_classical_r3"
+                android:layout_below="@id/tv_gann__r3"
                 android:layout_margin="3dp"
-                android:layout_toRightOf="@+id/tv_classical_r4"
+                android:layout_toRightOf="@+id/tv_gann__r4"
                 android:text="@string/default_price" />
         </RelativeLayout>
     </RelativeLayout>

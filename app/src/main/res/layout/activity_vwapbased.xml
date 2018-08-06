@@ -4,5 +4,309 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.betatester.amit.tradingpointcalculator.VWAPBased">
+    <EditText
+        android:id="@+id/et_curren_vix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current VIX"
+        android:inputType="numberDecimal"/>
 
+    <EditText
+        android:id="@+id/et_open_price"
+        android:layout_below="@id/et_curren_vix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Open Price"
+        android:inputType="numberDecimal"/>
+    <RelativeLayout
+        android:id="@+id/ll_gann"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/et_open_price">
+
+        <TextView
+            android:id="@+id/tv_vwap_s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="S1: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_s1"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s1"
+            android:layout_margin="3dp"
+            android:text="S2: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s1"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_s2"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_s3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s2"
+            android:layout_margin="3dp"
+            android:text="S3: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s2"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_s3"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_s4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s3"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:text="S4: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s3"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_s4"
+            android:textStyle="bold"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_s5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s4"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:text="S5: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s4"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+
+            android:layout_toRightOf="@+id/tv_vwap_s5"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_s6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s5"
+            android:layout_margin="3dp"
+            android:text="S6: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s5"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_s6"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_s7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s6"
+            android:layout_margin="3dp"
+            android:text="S7: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s6"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_s7"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_s8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s7"
+            android:layout_margin="3dp"
+            android:text="S8: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_s8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_s7"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_s8"
+            android:text="@string/default_price" />
+
+
+        <TextView
+            android:id="@+id/tv_vwap_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_toEndOf="@+id/tv_value_vwap_s1"
+            android:text="R1: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_r1"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_vwap_r1"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_vwap_s2"
+            android:text="R2: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_r1"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_r2"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_vwap_r2"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_vwap_s3"
+            android:text="R3: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_r2"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_r3"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_vwap_r3"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_vwap_s4"
+            android:textStyle="bold"
+
+            android:text="R4: " />
+
+        <TextView
+            android:id="@+id/tv_value_vwap_r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_r3"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_r4"
+            android:textStyle="bold"
+
+            android:text="@string/default_price" />
+        <TextView
+            android:id="@+id/tv_vwap_r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_vwap_r4"
+            android:textStyle="bold"
+
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_vwap_s5"
+            android:text="R5: " />
+        <TextView
+            android:id="@+id/tv_value_vwap_r5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_r4"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+
+            android:layout_toRightOf="@+id/tv_vwap_r5"
+            android:text="@string/default_price" />
+        <TextView
+            android:id="@+id/tv_vwap_r6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_vwap_r5"
+
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_vwap_s6"
+            android:text="R6: " />
+        <TextView
+            android:id="@+id/tv_value_vwap_r6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_r5"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_r6"
+            android:text="@string/default_price" />
+
+        <TextView
+            android:id="@+id/tv_vwap_r7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_vwap_r6"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_vwap_s7"
+            android:text="R7: " />
+        <TextView
+            android:id="@+id/tv_value_vwap_r7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_r6"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_r7"
+            android:text="@string/default_price" />
+        <TextView
+            android:id="@+id/tv_vwap_r8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_vwap_r7"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_value_vwap_s8"
+            android:text="R8: " />
+        <TextView
+            android:id="@+id/tv_value_vwap_r8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_vwap_r7"
+            android:layout_margin="3dp"
+            android:layout_toRightOf="@+id/tv_vwap_r8"
+            android:text="@string/default_price" />
+    </RelativeLayout>
 </RelativeLayout>

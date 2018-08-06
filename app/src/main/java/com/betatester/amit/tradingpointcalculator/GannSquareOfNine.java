@@ -751,7 +751,7 @@ public class GannSquareOfNine extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable editable) {
 
-            if (etCMP.getText().toString().equals("") || etCMP.getText().toString().equals("0")) {
+            if (etCMP.getText().toString().equals("") || Double.valueOf(etCMP.getText().toString()) == 0) {
                 clearAllFields();
                 return;
             }
